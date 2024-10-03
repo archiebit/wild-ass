@@ -7,18 +7,17 @@
 
 
 // Window data and constants.
-#define GWLP_TABLE          (  0 * sizeof( LONG_PTR ) )
-#define GWLP_COUNT          (  1 * sizeof( LONG_PTR ) )
-#define GWLP_REPLY          (  2 * sizeof( LONG_PTR ) )
-#define GWLP_EDIT           (  3 * sizeof( LONG_PTR ) )
-#define GWLP_FONT           (  4 * sizeof( LONG_PTR ) )
-#define GWLP_ICON_MAIN      (  5 * sizeof( LONG_PTR ) )
-#define GWLP_ICON_EDIT      (  6 * sizeof( LONG_PTR ) )
-#define GWLP_ICON_ADD       (  7 * sizeof( LONG_PTR ) )
-#define GWLP_ICON_REMOVE    (  8 * sizeof( LONG_PTR ) )
-#define GWLP_ICON_TRASH     (  9 * sizeof( LONG_PTR ) )
+#define GWLP_COUNT          ( 0 * sizeof( LONG_PTR ) )
+#define GWLP_REPLY          ( 1 * sizeof( LONG_PTR ) )
+#define GWLP_EDIT           ( 2 * sizeof( LONG_PTR ) )
+#define GWLP_FONT           ( 3 * sizeof( LONG_PTR ) )
+#define GWLP_ICON_MAIN      ( 4 * sizeof( LONG_PTR ) )
+#define GWLP_ICON_EDIT      ( 5 * sizeof( LONG_PTR ) )
+#define GWLP_ICON_ADD       ( 6 * sizeof( LONG_PTR ) )
+#define GWLP_ICON_REMOVE    ( 7 * sizeof( LONG_PTR ) )
+#define GWLP_ICON_TRASH     ( 8 * sizeof( LONG_PTR ) )
 
-#define WINDOW_EXTRA        ( 10 * sizeof( LONG_PTR ) )
+#define WINDOW_EXTRA        ( 9 * sizeof( LONG_PTR ) )
 #define WINDOW_COUNT_MAX    20
 #define WINDOW_REPLY_MAX    2048
 
@@ -42,7 +41,7 @@ namespace moo
     VOID CreateFormClass( HINSTANCE hInstance );
     VOID RemoveFormClass( HINSTANCE hInstance );
 
-    VOID CreateForm( HINSTANCE hInstance );
+    BOOL CreateForm( HINSTANCE hInstance );
 }
 
 
