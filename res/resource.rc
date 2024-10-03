@@ -1,0 +1,43 @@
+﻿#include <windows.h>
+#include <ntdef.h>
+
+
+VS_VERSION_INFO     VERSIONINFO
+FILEVERSION         1, 0, 0, 0
+PRODUCTVERSION      1, 0, 0, 0
+FILEFLAGSMASK       0
+FILEOS              VOS_NT
+FILETYPE            VFT_APP
+FILESUBTYPE         0
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041904B0"
+        BEGIN
+            VALUE "Comments",           L"WB Assistant"
+            VALUE "CompanyName",        L"ArchieBIT"
+            VALUE "FileDescription",    L"\x0057\x0069\x006c\x0064\x0062\x0065\x0072\x0072\x0069\x0065\x0073\x0020\x0410\x0441\x0441\x0438\x0441\x0442\x0435\x043d\x0442"
+            VALUE "FileVersion",        L"1.0.0.0"
+            VALUE "InternalName",       L"\x0057\x0069\x006c\x0064\x0062\x0065\x0072\x0072\x0069\x0065\x0073\x0020\x0410\x0441\x0441\x0438\x0441\x0442\x0435\x043d\x0442"
+            VALUE "LegalCopyright",     L"\x00a9\x0020\x0032\x0030\x0032\x0034\x0020\x0421\x043e\x0437\x0434\x0430\x043d\x043e\x0020\x0041\x0072\x0063\x0068\x0069\x0065\x0042\x0049\x0054"
+            VALUE "OriginalFilename",   L"wildass.exe"
+            VALUE "ProductName",        L"\x0057\x0069\x006c\x0064\x0062\x0065\x0072\x0072\x0069\x0065\x0073\x0020\x0410\x0441\x0441\x0438\x0441\x0442\x0435\x043d\x0442"
+            VALUE "ProductVersion",     L"1.0.0.0"
+        END
+    END
+
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0419, 0x04B0
+    END
+END
+
+0 ICON "book.ico"
+1 ICON "book_edit.ico"
+2 ICON "add.ico"
+3 ICON "delete.ico"
+4 ICON "bin_closed.ico"
+
+5 WAVE "append.wav"
+6 WAVE "remove.wav"
+7 WAVE "clear_clipboard.wav"
